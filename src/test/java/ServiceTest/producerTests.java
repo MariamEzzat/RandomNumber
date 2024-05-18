@@ -21,7 +21,17 @@ public class producerTests {
     private RabbitTemplate rabbitTemplate;
     private randomNumberRepo randomNumberRepo;
     private RandomNumberProducer randomNumberProducer;
-
+    
+    // @Mock
+    // private Queue randomNumbersQueue;
+    // @Mock
+    // private RabbitTemplate rabbitTemplate;
+    // @Mock
+    // private randomNumberRepo randomNumberRepo;
+    // @InjectMocks
+   // private RandomNumberProducer randomNumberProducer;
+    
+        @BeforeEach
     public void setup() {
         randomNumbersQueue = mock(Queue.class);
         rabbitTemplate = mock(RabbitTemplate.class);
